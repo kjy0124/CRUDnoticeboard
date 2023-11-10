@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 15px;/*최상위 태그의 글씨 크기 값*/
+}
+
+li{
+    list-style: none;
+}
+
+
+ul li a{
+    list-style-type : none;
+    display: block;
+}
+
+h1{
+    width: 1000px;
+    height:90px;
+}
+
+header {
+    width: 1000px;
+    height: 600ox;
+}
+
+.board_title {
+    margin-top: 30px;/*글쓰기 버튼 위치 위로 30px만큼 공백 생성*/
+    text-align: center;
+    display: inline-block;
+    width: 350px;
+    height: 90px;
+}
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 50px;
+    height: 90px;
+    font-size: 13px;
+}
+
+.menu li{
+    float: left;
+    font-size: 20px;
+    line-height: 10px;
+    width: 25%;
+    text-align: center;
+    height: 90px;
+    border-top: 2px solid hsl(61, 98%, 44%);
+}
