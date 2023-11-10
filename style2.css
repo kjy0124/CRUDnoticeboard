@@ -46,9 +46,10 @@ header {
 .menu li{
     float: left;
     font-size: 20px;
-    line-height: 10px;
+    line-height: 40px;
     width: 25%;
     text-align: center;
     height: 90px;
     border-top: 2px solid hsl(61, 98%, 44%);
+    text-decoration: none;
 }
