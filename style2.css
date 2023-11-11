@@ -1,10 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #757474;
 }
 
 html{
     font-size: 15px;/*최상위 태그의 글씨 크기 값*/
+}
+
+body{
+    padding: 10%;
 }
 
 li{
@@ -17,39 +23,128 @@ ul li a{
     display: block;
 }
 
-h1{
-    width: 1000px;
-    height:90px;
-}
-
 header {
     width: 1000px;
-    height: 600ox;
 }
 
-.board_title {
-    margin-top: 30px;/*글쓰기 버튼 위치 위로 30px만큼 공백 생성*/
-    text-align: center;
-    display: inline-block;
-    width: 350px;
-    height: 90px;
+.header {
+    width: 100%;
+    border-bottom: 2px solid hsl(61, 98%, 44%);
 }
+.board_title {
+    margin-top: 20px;/*글쓰기 버튼 위치 위로 30px만큼 공백 생성*/
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
 .login {
     margin-top: 30px;
     text-align: right;
     display: inline-block;
     width: 50px;
-    height: 90px;
+    height: 40px;
     font-size: 13px;
+    float: right;
+}
+
+.menu {
+    display: inline;
+    height: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .menu li{
-    float: left;
+    width: 100%;
+    display: inline;
+    padding: 0px 10px 0px 30px;
     font-size: 20px;
-    line-height: 40px;
-    width: 25%;
-    text-align: center;
-    height: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menu li a{
+    display: inline-block;
+}
+
+.all {
+    width: 1000px;
     border-top: 2px solid hsl(61, 98%, 44%);
-    text-decoration: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.Notice {
+    border: 1px solid hsl(61, 98%, 44%);
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    width:30%;
+    height: 500px;
+    box-sizing: border-box;
+    float: left;
+    height: 500px;
+}
+
+.Notice > div.title {
+    text-align: left;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+
+.Notice > div.writer {
+    text-align: right;
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.Notice hr {
+    border: 0.1px solid hsl(61, 98%, 44%)
+}
+
+.Board{
+    border: 1px solid hsl(61, 98%, 44%);
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    width:30%;
+    height: 500px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 5%;
+}
+
+.Board > div.title {
+    text-align: left;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+
+.Board > div.writer {
+    text-align: right;
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.Board hr {
+    border: 0.1px solid hsl(61, 98%, 44%)
+}
+.HOT{
+    border: 1px solid hsl(61, 98%, 44%);
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    width:30%;
+    height: 500px;
+    box-sizing: border-box;
+    float: right;
 }
