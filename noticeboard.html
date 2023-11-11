@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JY's NoticeBoard</title>
-    <link rel="stylesheet" href="/Users/jong-yeobkim/Desktop/CRUD 게시판/style2.css">
+    <title>NoticeBoard</title>
+    <link rel="stylesheet" href="/Users/jong-yeobkim/Desktop/CRUD 게시판/style2.css">
 </head>
 <body>
     <header>
-        <h1>
+        <div class allboarder>
+        <div class="header">
             <a href="noticeboard.html">
-                <img src="/Users/jong-yeobkim/Desktop/CRUD 게시판/noticeboard.jpeg" 
-                alt="게시판 메인화면 이동"width="80" height="80" align="top" border="0" id = "logo">
+                <img src="/Users/jong-yeobkim/Desktop/CRUD 게시판/board.jpeg"
+                    alt="게시판" width="70" height="70" align="top" border="0" title = "게시판">
             </a>
             <div class="board_title">
-                <strong>Notice Board</strong>
+                <h1>Notice Board</h1>
             </div>
-            <div class="login">
+            <div class ="login">
                 <li> <a href="#">로그인</a></li>
             </div>
-        </h1>
+        </div>
         <div>
             <ul class="menu">
-                <nav id="listmenu">
+                <nav class="listmenu">
                     <li> <a href="#">공지사항</a></li>
                     <li> <a href="#">전체 게시판</a></li>
                     <li> <a href="#">인기 게시판</a></li>
@@ -30,6 +31,28 @@
             </ul>
         </div>
     </header>
+
+    <div class="all">
+        <div class="Notice">
+            <div class="title">제목</div>
+            <div class="writer">작성자</div>
+            <hr>
+            <div class="NT_li">
+                <div class="title">게시판 이용 방법</div>
+                <div class="writer">김종엽</div>
+            </div>
+        </div>
+        <div class="Board">
+            <div class="title">제목</div>
+            <div class="writer">작성자</div>
+        </div>
+        <hr>
+        <div class="HOT">
+            <div class="title">제목</div>
+            <div class="writer">작성자</div>
+        </div>
+        <hr>
+    </div>
 </body>
 
 </html>
