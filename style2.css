@@ -85,7 +85,7 @@ header {
 }
 
 .Notice {
-    border: 1px solid hsl(61, 98%, 44%);
+    border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
     border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
     width:30%;
@@ -95,25 +95,40 @@ header {
     height: 500px;
 }
 
-.Notice > div.title {
-    text-align: left;
+.Notice_top > div.title {
+    text-align: center;
     display: inline-block;
-    margin-left: 70px;
-    
+    width: 70%;
 }
 
-.Notice > div.writer {
+.Notice_top> div.writer {
     text-align: right;
     display: inline-block;
-    margin-left: 120px;
+    width: 20%
 }
 
-.Notice hr {
+.Notice_top hr, .Board_top hr, .HOT_top hr {
     border: 0.1px solid hsl(61, 98%, 44%)
 }
 
+.NT_li .title{
+    float: left;
+    width: 70%;
+    display: inline-block;
+}
+
+.NT_li .writer{
+    float: right;
+    width: 20%;
+    display: inline-block;
+}
+
+.NT_li .title, .NT_li .writer {
+    border-bottom: 1px solid hsl(61, 98%, 44%);
+}
+
 .Board{
-    border: 1px solid hsl(61, 98%, 44%);
+    border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
     border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
     width:30%;
@@ -123,28 +138,72 @@ header {
     margin-left: 5%;
 }
 
-.Board > div.title {
-    text-align: left;
+.Board_top > div.title {
+    text-align: center;
     display: inline-block;
-    margin-left: 70px;
-    
+    width: 70%;
 }
 
-.Board > div.writer {
+.Board_top > div.writer {
     text-align: right;
     display: inline-block;
-    margin-left: 120px;
+    width: 20%;
 }
 
-.Board hr {
-    border: 0.1px solid hsl(61, 98%, 44%)
+.Br_li .title{
+    float: left;
+    width: 70%;
+    display: inline-block;
 }
-.HOT{
-    border: 1px solid hsl(61, 98%, 44%);
+
+.Br_li .writer{
+    float: right;
+    width: 20%;
+    display: inline-block;
+}
+
+.Hot{
+    border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
     border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
     width:30%;
     height: 500px;
     box-sizing: border-box;
     float: right;
+}
+
+.HOT_top > div.title {
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+}
+
+.HOT_top > div.writer {
+    text-align: none;
+    display: inline-block;
+    width: 20%;
+}
+
+.HOT_top > div.count {
+    text-align: right;
+    display: inline-block;
+    width: 10%;
+}
+
+.Hot_li .title{
+    float: left;
+    width: 70%;
+    display: inline-block;
+}
+
+.Hot_li .writer{
+    float:none;
+    width: 20%;
+    display: inline-block;
+}
+
+.Hot_li .count{
+    float:right;
+    width: 10%;
+    display: inline-block;
 }
