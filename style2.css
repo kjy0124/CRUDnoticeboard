@@ -123,10 +123,6 @@ header {
     display: inline-block;
 }
 
-.NT_li .title, .NT_li .writer {
-    border-bottom: 1px solid hsl(61, 98%, 44%);
-}
-
 .Board{
     border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
@@ -175,7 +171,7 @@ header {
 .HOT_top > div.title {
     text-align: center;
     display: inline-block;
-    width: 70%;
+    width: 50%;
 }
 
 .HOT_top > div.writer {
@@ -187,12 +183,12 @@ header {
 .HOT_top > div.count {
     text-align: right;
     display: inline-block;
-    width: 10%;
+    width: 20%;
 }
 
 .Hot_li .title{
     float: left;
-    width: 70%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -204,6 +200,10 @@ header {
 
 .Hot_li .count{
     float:right;
-    width: 10%;
+    width: 20%;
     display: inline-block;
+}
+
+.NT_li .Br_li .Hot_li{
+    border-bottom: 1px solid #000;
 }
