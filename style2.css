@@ -204,6 +204,14 @@ header {
     display: inline-block;
 }
 
-.NT_li .Br_li .Hot_li{
-    border-bottom: 1px solid #000;
+.NT_li, .Br_li, .Hot_li {
+    margin-top: 5%;
+}
+
+.NT_li hr, .Br_li hr, .Hot_li hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    background-color: #757474;
+    height: 0.1px;
 }
