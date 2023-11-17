@@ -99,12 +99,14 @@ header {
     text-align: center;
     display: inline-block;
     width: 70%;
+    vertical-align: middle;
 }
 
 .Notice_top> div.writer {
     text-align: right;
     display: inline-block;
-    width: 20%
+    width: 20%;
+    vertical-align: middle;
 }
 
 .Notice_top hr, .Board_top hr, .HOT_top hr {
@@ -206,6 +208,8 @@ header {
 
 .NT_li, .Br_li, .Hot_li {
     margin-top: 5%;
+    margin-bottom: 5%;
+    vertical-align: middle;
 }
 
 .NT_li hr, .Br_li hr, .Hot_li hr{
