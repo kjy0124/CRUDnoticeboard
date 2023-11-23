@@ -1,53 +1,28 @@
-function signUpCheck(){
-    let ID = document.getElementById("ID").value
-    let name = document.getElementById("name").value
-    let password = document.getElementById("password").value
-    let passwordCheck = document.getElementById("passwordCheck").value
-    let man = document.getElementById("man").checked
-    let woman = document.getElementById("woman").checked
-    let check = true;
+function signUpCheck() {
+    const id = document.getElementById('id').value;
+    const name = document.getElementById('name').value;
+    const password = document.getElementById('password').value;
+    const passwordCheck = document.getElementById('passwordCheck').value;
+    const man = document.getElementById('man').checked;
+    const woman = document.getElementById('woman').checked;
+    const signUpButton = document.getElementById('signUpButton');
 
+    const passwordCheckError = document.getElementById('passwordCheckError');
 
- // 비밀번호 확인
- if(password !== passwordCheck){
-    document.getElementById("passwordError").innerHTML=""
-    document.getElementById("passwordCheckError").innerHTML="비밀번호가 동일하지 않습니다."
-    check = false
-  }else{
-    document.getElementById("passwordError").innerHTML=""
-    document.getElementById("passwordCheckError").innerHTML=""
-  }
-
-  if(password===""){
-    document.getElementById("passwordError").innerHTML="비밀번호를 입력해주세요."
-    check = false
-  }else{
-    //document.getElementById("passwordError").innerHTML=""
-  }
-  if(passwordCheck===""){
-    document.getElementById("passwordCheckError").innerHTML="비밀번호를 다시 입력해주세요."
-    check = false
-  }else{
-    //document.getElementById("passwordCheckError").innerHTML=""
-  }
-
-  // 성별체크확인
-  if(!gender_man && !gender_woman){
-    document.getElementById("sexError").innerHTML="성별을 선택해주세요."
-    check = false
-  }else{
-    document.getElementById("sexError").innerHTML=""
-  }
-  
-  if(check){
-    document.getElementById("nameError").innerHTML=""
-    document.getElementById("passwordError").innerHTML=""
-    document.getElementById("passwordCheckError").innerHTML=""
-    document.getElementById("sexError").innerHTML=""
-    
-    //비동기 처리이벤트
-    setTimeout(function() {
-      alert("가입이 완료되었습니다.")
-  },0);
-  }
+    // 비밀번호 확인
+    if (password !== passwordCheck) {
+        passwordCheckError.textContent = '비밀번호가 일치하지 않습니다.';
+        signUpButton.disabled = true;
+    } else {
+        passwordCheckError.textContent = '';
+        signUpButton.disabled = false;
+    }
 }
+
+// 각 입력 필드나 라디오 버튼의 값이 변경될 때마다 signUpCheck 함수 호출
+document.getElementById('id').addEventListener('input', signUpCheck);
+document.getElementById('name').addEventListener('input', signUpCheck);
+document.getElementById('password').addEventListener('input', signUpCheck);
+document.getElementById('passwordCheck').addEventListener('input', signUpCheck);
+document.getElementById('man').addEventListener('change', signUpCheck);
+document.getElementById('woman').addEventListener('change', signUpCheck);
