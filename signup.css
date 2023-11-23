@@ -5,10 +5,65 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div {
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+.ID input {
+    width: 100%;
+}
+
+.name input {
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+.passwordCheck input {
+    width: 100%;
+}
+
+.signUp button {
+    width: 100%;
+    cursor:pointer;
+}
+
+.sex {
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    height: 30px;
+}
+
+.error{
+    font-size: 1px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+}
 .signup_wrapper {
     border: 2px solid hsl(61, 98%, 44%);
-    border-top-left-radius: 15px; border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    border-radius: 15px;
     width: 300px;
     height: 400px;
     padding: 40px;
@@ -17,7 +72,7 @@
     margin-top: 100px;
 }
 
-.signup_wrapper .title h2{
+.signup_wrapper h2{
     font-size: 24px;
     color: #b8a225;
     margin-bottom: 20px;
