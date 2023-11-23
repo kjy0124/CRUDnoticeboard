@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    color: #757474;
+}
+a {
+    text-decoration:none;
+    color: inherit;
 }
 
 html{
@@ -32,7 +34,7 @@ header {
     border-bottom: 2px solid hsl(61, 98%, 44%);
 }
 .board_title {
-    margin-top: 20px;/*글쓰기 버튼 위치 위로 30px만큼 공백 생성*/
+    margin-top: 20px;
     text-align: center;
     display: inline;
     margin-left: auto;
@@ -84,138 +86,126 @@ header {
     text-align: center;
 }
 
-.Notice {
-    border: 2px solid hsl(61, 98%, 44%);
-    border-top-left-radius: 15px; border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
-    width:30%;
-    height: 500px;
-    box-sizing: border-box;
-    float: left;
-    height: 500px;
+#all > div {
+    width: 90%;
+    min-width:1000px;
+    max-width:1200px;
+    margin:0 auto;
+    font-size: 0;
+}
+.board {
+    display: inline-block;
+    width: 33%;
+    background: #fff;
 }
 
-.Notice_top > div.title {
-    text-align: center;
+#all > div > div:nth-child(even){
+    margin-left: 4%;
+}
+#all > div >div:nth-child(2),
+#all > div >div:nth-child(3){
+    margin-top: 40px;
+}
+.board .title {
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsl(61, 98%, 44%);
+}
+
+.board .title a{
     display: inline-block;
-    width: 70%;
     vertical-align: middle;
 }
 
-.Notice_top> div.writer {
-    text-align: right;
+.board .title .name {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.board .title .date {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.board .list {
+    padding: 15px;
+}
+
+.board .list ul li{
+    margin-top: 10px;
+    padding-left: 7px;
+    background: url(../img/dot.gif) no-repeat 0 7px/2px;
+    font-size: 0;
+}
+
+.board .list ul li:first-child{
+    margin-top: 0;
+}
+
+.board .list a,
+.board .list span{
     display: inline-block;
-    width: 20%;
     vertical-align: middle;
 }
 
-.Notice_top hr, .Board_top hr, .HOT_top hr {
-    border: 0.1px solid hsl(61, 98%, 44%)
+.board .list a{
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
 }
 
-.NT_li .title{
-    float: left;
-    width: 70%;
-    display: inline-block;
-}
-
-.NT_li .writer{
-    float: right;
+.board .list span {
     width: 20%;
-    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    color: #777;
 }
 
-.Board{
+.board {
     border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
     border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
-    width:30%;
-    height: 500px;
+    width: 33%;
+    height: 250px;
     box-sizing: border-box;
-    float: left;
-    margin-left: 5%;
 }
 
-.Board_top > div.title {
+.board .page {
+    margin-top: 30px;
     text-align: center;
-    display: inline-block;
-    width: 70%;
+    font-size: 0;
+    border-top: 1px solid #ddd;
 }
 
-.Board_top > div.writer {
-    text-align: right;
+.board .page a{
     display: inline-block;
-    width: 20%;
-}
-
-.Br_li .title{
-    float: left;
-    width: 70%;
-    display: inline-block;
-}
-
-.Br_li .writer{
-    float: right;
-    width: 20%;
-    display: inline-block;
-}
-
-.Hot{
-    border: 2px solid hsl(61, 98%, 44%);
-    border-top-left-radius: 15px; border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
-    width:30%;
-    height: 500px;
+    margin-top: 5px;
+    width: 14px;
+    height: 14px;
     box-sizing: border-box;
-    float: right;
-}
-
-.HOT_top > div.title {
-    text-align: center;
-    display: inline-block;
-    width: 50%;
-}
-
-.HOT_top > div.writer {
-    text-align: none;
-    display: inline-block;
-    width: 20%;
-}
-
-.HOT_top > div.count {
-    text-align: right;
-    display: inline-block;
-    width: 20%;
-}
-
-.Hot_li .title{
-    float: left;
-    width: 50%;
-    display: inline-block;
-}
-
-.Hot_li .writer{
-    float:none;
-    width: 20%;
-    display: inline-block;
-}
-
-.Hot_li .count{
-    float:right;
-    width: 20%;
-    display: inline-block;
-}
-
-.NT_li, .Br_li, .Hot_li {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    border: 1px solid #ddd;
+    border-left: 0;
     vertical-align: middle;
+    line-height: 100%;
+}
+.board .page a.bt{
+    font-size: 10px;
+    letter-spacing: -1px;
 }
 
-.NT_li hr, .Br_li hr, .Hot_li hr{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 100%;
-    background-color: #757474;
-    height: 0.1px;
+.board .page a.num{
+    font-size: 12px;
+}
+
+.board .page a.num.on {
+    border-color: hsl(61, 98%, 44%);
+    background-color: hsl(61, 98%, 44%);
+    color: #999;
+}
+
+.board .page a:first-child{
+    border-left: 1px solid #ddd;
 }
