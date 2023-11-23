@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+.signup_wrapper {
+    border: 2px solid hsl(61, 98%, 44%);
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    width: 300px;
+    height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.signup_wrapper .title h2{
+    font-size: 24px;
+    color: #b8a225;
+    margin-bottom: 20px;
+}
