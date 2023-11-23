@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <link ref="stylesheet" href="signup.css"
+    <script src="signup.js"></script>
+</head>
+<body>
+    <div class="signup_wrapper">
+        <h2>SignUp</h2>
+        <div class="ID">
+            <input id="id" type="text" placeholder="ID를 입력해주세요.">
+        </div>
+        <div class="name">
+            <input id="name" type="text" placeholder="홍길등">
+        </div>
+        <div class="password">
+            <input id="password" type="password" placeholder="비밀번호를 입력해주세요.">
+        </div>
+        <div class="passwordCheck">
+            <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div>
+        <div class="sex">
+            <input id="man" type="radio" name="sex">남성
+            <input id="woman" type="radio" name="sex">여성
+        </div>
+        <div class="Line">
+            <hr>
+        </div>
+        <div class="SIGNUP">
+            <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+        </div>
+    </div>
+</body>
+</html>
