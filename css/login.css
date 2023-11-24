@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration:none;
+    color: inherit;
+}
+ul li a{
+    list-style-type : none;
+    display: block;
+}
+header {
+    width: 1000px;
+}
+body{
+    padding: 10%;
+}
+.board_title {
+    margin-top: 20px;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 52px;
+    height: 40px;
+    font-size: 13px;
+    float: right;
+    list-style-type: none;
+}
+.login-wrapper {
+    border: 2px solid hsl(61, 98%, 44%);
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    width: 300px;
+    height: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #b8a225;
+    margin-bottom: 20px;
+}
+
+#login-form > input {
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#login-form > input::placeholder{
+    color: #999;
+}
+
+#login-form >input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #b8a225;
+    margin-top: 15px;
+}
+
+#login-form > a{
+    text-align: right;
+}
+.login-wrapper a {
+    text-align: right;
+}
