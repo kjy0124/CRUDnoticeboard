@@ -2,7 +2,41 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration:none;
+    color: inherit;
+}
+ul li a{
+    list-style-type : none;
+    display: block;
+}
+header {
+    width: 1000px;
+}
+.board_title {
+    margin-top: 20px;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
 
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 52px;
+    height: 40px;
+    font-size: 13px;
+    float: right;
+    list-style-type: none;
+}
 .login-wrapper {
     border: 2px solid hsl(61, 98%, 44%);
     border-top-left-radius: 15px; border-top-right-radius: 15px;
@@ -40,4 +74,11 @@
     font-size: 16px;
     background-color: #b8a225;
     margin-top: 15px;
+}
+
+#login-form > a{
+    text-align: right;
+}
+.login-wrapper a {
+    text-align: right;
 }
