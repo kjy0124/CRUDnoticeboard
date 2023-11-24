@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 15px;/*최상위 태그의 글씨 크기 값*/
+}
+
+body{
+    padding: 10%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    width: 1000px;
+}
+
+.header {
+    width: 100%;
+    /* border-bottom: 2px solid hsl(61, 98%, 44%); */
+}
+.board_title {
+    margin-top: 20px;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: 13px;
+    float: right;
+    white-space: nowrap;
+}
+/*메인 페이지 board_wrap의 위치 선정 및 넓이 설정*/
+.board_wrap {
+    width: 1000px;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.board_title {
+    margin-bottom: 30px;/*타이틀 아래 공간 생성*/
+}
+
+.board_title strong{
+    font-size: 3rem;/*최상위 글씨 크기 값 10px * 3한 값*/
+}
+
+.board_title p {
+    margin-top: 5px;/*타이틀 아래 여백 생성*/
+    font-size: 1.4rem;/*타이틀 밑 p의 글씨 크기*/
+}
+
+.bt_wrap {
+    margin-top: 30px;/*글쓰기 버튼 위치 위로 30px만큼 공백 생성*/
+    text-align: right;/*버튼 위치를 중간으로 설정*/
+    font-size: 0;/*빈 공백이 생기지 않도록 하기 위해 font-size를 재정의*/
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;/*최소 가로길이 값 설정*/
+    margin-left: 10px;
+    padding: 10px;/*상하좌우 여백을 10px로 설정*/
+    border: 1px solid #000;/*테두리 선 색상 및 굵기*/
+    font-size: 1.4rem;
+    border-radius: 6px;
+    text-align: center;
+}
+.bt_wrap button {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    background:rgb(244, 114, 114);
+}
+/*첫 번째 버튼 위치를 오른쪽으로 밀리지 않게 하기 위해 설정*/
+.board_wrap a:first-child {
+    margin-left: 0;
+}
+/*버튼의 배경은 검정, 글씨 색은 흰색으로 설정*/
+.board_wrap a.on {
+    background: #b8a225;
+    color: #fff;
+}
+
+/*리스트의 가장 윗 줄 검정색*/
+.board_list {
+    width: 100%;/*부모의 가로 길이를 1000px로 설정하여 100%로 입력 시 1000px만큼 적용*/
+    border-top: 3px solid hsl(61, 98%, 44%);
+}
+
+/*일발 리스트들의 아래에 줄 생성*/
+.board_list> div {
+    border-bottom: 2px solid #ddd;
+    font-size: 0;
+}
+
+/*리스트의 top 아래에는 진한 회색 줄 생성*/
+.board_list> div.top {
+    border-color: hsl(61, 98%, 44%);
+}
+/*제일 마지막 리스트 아래에는 검정색 선 생성*/
+.board_list> div:last-child {
+    border-bottom: 2px solid hsl(61, 98%, 44%);
+}
+/* 리스트를 블럭 안에 가로로 정렬*/
+.board_list > div > div {
+    display: inline-block; /*리스트 내용을 가로로 나열*/
+    vertical-align: middle;/*리스트들을 중간으로 수직정렬*/
+    font-size: 1.4rem; /*이 코드가 있어야 글자들이 안씹힘*/
+    text-align: center; /*중간으로 값의 위치 지정*/
+    padding: 10px 0;
+}
+
+/*top에 있는 div 설정*/
+.board_list > div.top > div {
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+/*각 요소들이 잡는 공간 지정*/
+
+/*번호 공간 가로 길이를 10%로 설정*/
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;/* top에 위치하지 않은 title들은 왼쪽으로 배치*/
+}
+
+.board_list .top .title {
+    text-align: center;/* top에 위치한 title을 중간으로 배치 */
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+/*페이지 목록*/
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    /*페이지 버튼 세로가로 길이를 32px로 지정*/
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box; /*페이지 번호 사이즈 크기를 박스 사이즈를 넘지 않도록 설정*/
+    border: 1px solid #ddd;
+    border-left: 0;
+    vertical-align: middle; /*페이지 번호를 가운데로 정렬*/
+    line-height: 100%;/*페이지 버튼 내부의 숫자 위치를 조절*/
+}
+
+.board_page a.bt {
+    font-size: 1.2rem;/*페이지 번호 버튼 크기*/
+    padding-top: 10px;/*윗쪽 공백 생성*/
+    letter-spacing: -1px;/*글자 사이 간격이 너무 벌어지지 않도록 설정*/
+}
+
+.board_page a.num {
+    font-size: 1.4rem;/*페이지 번호 숫자 크기*/
+    padding-top: 9px;
+}
+/*페이지 번호 num.on 클래스를 가진 박스 꾸미기*/
+.board_page a.num.on {
+    border-color: hsl(61, 98%, 44%);
+    background-color: hsl(61, 98%, 44%);/*nom on 번호 배경*/
+    color: #999;/*num on의 번호 색*/
+}
+
+.board_page a:first-child {
+    border-left: 1px solid #ddd;/*페이지 첫번째 버튼 좌측 선 표시*/
+}
+
+/*게시물 스타일*/
+.board_view {
+    width: 100%;
+     border-top: 2px solid hsl(61, 98%, 44%);/*게시물 페이지에서 제목 상단에 검정 줄 표기 */
+    font-size: 1.4rem;
+}
+
+.board_view .title {
+    padding: 15px 10px;/*상, 좌 공백 생성*/
+    border-bottom: 1px solid #999; /*제목 하단에 선*/
+    font-size: 2rem;
+    text-align: left;
+    font-size: 20px;
+}
+
+.board_view .info {
+    padding: 15px;
+    border-bottom: 1px solid #999; /*각 요소 밑 선*/
+    text-align: left;
+    /*font-size: 0;*/
+}
+
+.board_view .info dl {
+    display: inline-block; /*각 요소를 한 블럭 안에 한 줄로 배치*/
+    padding: 0 20px;
+    position: relative;/*position의 absolute 값을 주기 위해 입력*/
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0; /*첫 번째 요소 좌측으로 살짝 이동*/
+}
+
+/*각 요소들을 구분하기 위해 앞에 세로 선 배치*/
+.board_view .info dl::before {
+    content: ""; /*요소 앞에 문자 입력하는 명령어이고 이 코드가 없으면 설계자가 표시하고 싶은 것이 안나타남*/
+    /*선이 위치할 자리 잡아주기*/
+    position: absolute; /*선의 개별적인 위치 값을 갖기 위해 absolute 값으로 지정*/
+    /*absolute 값은 relative로 포지션이 지정된 값을 기준으로 선의 위치를 잡아줌*/
+    top: 1px;
+    left: 0;
+    display: block; /*선을 블럭 안에 위치시키기 위해 필요*/
+    /*중간 요소별 구분을 위한 선 스타일 지정*/
+    width: 1px;
+    height: 13px;
+    background-color: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;/*첫 번째 요소 앞에 위치한 선 제거*/
+}
+
+.board_view .info dd, .board_view .info dt {
+    display: inline-block;/*요소 이름과 요소 내용이 칸 안에 잘 들어올 수 있도록 배치*/
+    font-size: 1.4rem;
+}
+
+/*각 속성의 스타일*/
+.board_view .info dt{
+    display: inline-block;
+    
+    color: #000;
+}
+
+/*각 속성의 내용 스타일*/
+.board_view .info dd {
+    display: inline-block;
+    margin-left: 10px;
+    color: #777;
+}
+
+/*게시물 내 내용 스타일*/
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 2px solid hsl(61, 98%, 44%);
+    line-height: 160%; /*게시물 내용의 상하 줄간격*/
+    text-align: left;
+}
+
+/*글쓰기 화면 구성*/
+.board_write {
+     border-top: 3px solid hsl(61, 98%, 44%);
+     width: 100%;
+}
+
+.board_write .title, .info {
+    padding: 15px;/*글쓰기 페이지의 title과 info 상하좌우 공백 생성*/
+    text-align: left;
+}
+
+.board_write .info {
+    border-top: 1px solid #999;
+    border-bottom: 2px solid hsl(61, 98%, 44%);
+    font-size: 0;/*빈 공백이 생기기 않도록 하기 위해 font-size를 재정의*/
+}
+
+.board_write .title dl {
+    font-size: 0;/*제목 요소 가로로 나열*/
+}
+
+/*작성자 요소와 요소 내용 크기 및 위치 지정*/
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .title dt, .board_write .title dd,
+.board_write .info dt, .board_write .info dd {
+    display: inline-block;/*각 요소들을 한 블럭에 나열*/
+    font-size: 1.4rem;
+    vertical-align: middle;/*중간으로 수직 정렬을 해줌*/
+}
+ 
+.board_write .title dt, .board_write .info dt {
+    width: 100px;
+}
+
+.board_write .title dd {
+    width: calc(100% - 100px);
+}
+
+/*제목 요소 입력 공간 크기 지정*/
+.board_write .title input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+/*info 요소 타입 지정 후 박스 위치 및 크기 조절 */
+.board_write .info input[type="text"] {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.board_write .cont {
+    border-bottom: 2px solid hsl(61, 98%, 44%);
+}
+
+/*텍스트 공간 꾸미기*/
+.board_write .cont textarea {
+    display: block;
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0; /*사이드 선 삭제*/
+    resize: vertical; /*textarea의 상하의 길이 조절기능 추가*/
+}
