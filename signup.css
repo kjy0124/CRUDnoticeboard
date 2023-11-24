@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 11px;
     box-sizing: border-box;
 }
 
@@ -20,6 +19,41 @@ input{
     font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
+}
+a {
+    text-decoration:none;
+    color: inherit;
+}
+ul li a{
+    list-style-type : none;
+    display: block;
+}
+header {
+    width: 1000px;
+}
+.board_title {
+    margin-top: 20px;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 52px;
+    height: 40px;
+    font-size: 13px;
+    float: right;
+    list-style-type: none;
 }
 div {
     padding-top: 3px;
