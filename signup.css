@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
-html {
+html { 
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+body{
+    padding: 10%;
 }
 
 input{
@@ -28,8 +32,10 @@ ul li a{
     list-style-type : none;
     display: block;
 }
-header {
+header-container {
     width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .board_title {
     margin-top: 20px;
@@ -37,23 +43,26 @@ header {
     display: inline;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 }
 .board_title h1 {
     display: inline-block;
     line-height: 80px;
     margin-left: 320px;
     margin-right: 320px;
+    white-space: nowrap;
 }
 
 .login {
     margin-top: 30px;
     text-align: right;
-    display: inline-block;
-    width: 52px;
+    display: block;
+    width: auto;
     height: 40px;
     font-size: 13px;
     float: right;
     list-style-type: none;
+    white-space: nowrap;
 }
 div {
     padding-top: 3px;
@@ -81,12 +90,13 @@ div {
 }
 
 .sex {
-    text-align: center;
+    text-align: left;
 }
 
 button{
     cursor: pointer;
     height: 30px;
+    float: right;
 }
 
 .error{
