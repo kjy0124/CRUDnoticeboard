@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 13px;/*최상위 태그의 글씨 크기 값*/
+}
+
+body{
+    padding: 10%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    width: 1000px;
+}
+
+.header {
+    width: 100%;
+    /* border-bottom: 2px solid hsl(61, 98%, 44%); */
+}
+.board_title {
+    margin-top: 20px;
+    text-align: center;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+.board_title h1 {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: right;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: 13px;
+    float: right;
+    white-space: nowrap;
+}
+/*메인 페이지 board_wrap의 위치 선정 및 넓이 설정*/
+.board_wrap {
+    width: 1000px;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.board_title {
+    margin-bottom: 30px;/*타이틀 아래 공간 생성*/
+}
+
+.board_title strong{
+    font-size: 3rem;/*최상위 글씨 크기 값 10px * 3한 값*/
+}
+
+.board_title p {
+    margin-top: 5px;/*타이틀 아래 여백 생성*/
+    font-size: 1.4rem;/*타이틀 밑 p의 글씨 크기*/
+}
+.board_list {
+    width: 100%;/*부모의 가로 길이를 1000px로 설정하여 100%로 입력 시 1000px만큼 적용*/
+    border-top: 3px solid hsl(61, 98%, 44%);
+}
+
+/*일발 리스트들의 아래에 줄 생성*/
+.board_list> div {
+    border-bottom: 2px solid #ddd;
+    font-size: 0;
+}
+
+/*리스트의 top 아래에는 진한 회색 줄 생성*/
+.board_list> div.top {
+    border-color: hsl(61, 98%, 44%);
+}
+/*제일 마지막 리스트 아래에는 검정색 선 생성*/
+.board_list> div:last-child {
+    border-bottom: 2px solid hsl(61, 98%, 44%);
+}
+/* 리스트를 블럭 안에 가로로 정렬*/
+.board_list > div > div {
+    display: inline-block; /*리스트 내용을 가로로 나열*/
+    vertical-align: middle;/*리스트들을 중간으로 수직정렬*/
+    font-size: 1.4rem; /*이 코드가 있어야 글자들이 안씹힘*/
+    text-align: center; /*중간으로 값의 위치 지정*/
+    padding: 10px 0;
+}
+
+/*top에 있는 div 설정*/
+.board_list > div.top > div {
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+/*각 요소들이 잡는 공간 지정*/
+
+/*번호 공간 가로 길이를 10%로 설정*/
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;/* top에 위치하지 않은 title들은 왼쪽으로 배치*/
+}
+
+.board_list .top .title {
+    text-align: center;/* top에 위치한 title을 중간으로 배치 */
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+/*페이지 목록*/
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    /*페이지 버튼 세로가로 길이를 32px로 지정*/
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box; /*페이지 번호 사이즈 크기를 박스 사이즈를 넘지 않도록 설정*/
+    border: 1px solid #ddd;
+    border-left: 0;
+    vertical-align: middle; /*페이지 번호를 가운데로 정렬*/
+    line-height: 100%;/*페이지 버튼 내부의 숫자 위치를 조절*/
+}
+
+.board_page a.bt {
+    font-size: 1.2rem;/*페이지 번호 버튼 크기*/
+    padding-top: 10px;/*윗쪽 공백 생성*/
+    letter-spacing: -1px;/*글자 사이 간격이 너무 벌어지지 않도록 설정*/
+}
+
+.board_page a.num {
+    font-size: 1.4rem;/*페이지 번호 숫자 크기*/
+    padding-top: 9px;
+}
+/*페이지 번호 num.on 클래스를 가진 박스 꾸미기*/
+.board_page a.num.on {
+    border-color: hsl(61, 98%, 44%);
+    background-color: hsl(61, 98%, 44%);/*nom on 번호 배경*/
+    color: #999;/*num on의 번호 색*/
+}
+
+.board_page a:first-child {
+    border-left: 1px solid #ddd;/*페이지 첫번째 버튼 좌측 선 표시*/
+}
